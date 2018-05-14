@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "plywood",
+  "description": "Expose remote debugging for (mainly) DOM and CSS domains over a Chrome extension",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icons/icon-default-16.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "content_security_policy": "script-src 'self' https://unpkg.com; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "debugger",
+    "contextMenus"
+  ]
+}
